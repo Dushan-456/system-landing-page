@@ -8,7 +8,7 @@ const projects = [
     desc: "A comprehensive room reservation platform for managing conference rooms, time slots, and bookings with an intuitive calendar view.",
     icon: "📅",
     tags: ["web", "fullstack"],
-    link: "#", // ← Replace with your live URL
+    link: "http://192.168.112.199/Meeting-Room-Booking-System/web/index.php", // ← Replace with your live URL
     status: "Developed",
     accentFrom: "#4f8cff",
     accentTo: "#6366f1",
@@ -19,7 +19,7 @@ const projects = [
     desc: "SurveyMonkey automation platform with real-time API integration, survey analysis, folder management, and data export capabilities.",
     icon: "⚡",
     tags: ["web", "automation"],
-    link: "#",
+    link: "http://192.168.112.199:3000",
     status: "Developed",
     accentFrom: "#2dd4bf",
     accentTo: "#22d3ee",
@@ -30,7 +30,7 @@ const projects = [
     icon: "🧮",
     tags: ["web"],
     link: "#",
-    status: "Developed",
+    status: "Coming Soon",
     accentFrom: "#34d399",
     accentTo: "#10b981",
   },
