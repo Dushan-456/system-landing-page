@@ -101,7 +101,7 @@ function renderCards(filter = 'all', search = '') {
         const statusLabel = isComingSoon ? 'Coming Soon' : 'Live';
 
         return `
-        <a href="${href}" class="${cardClass}" style="animation-delay: ${i * 0.08}s; --card-accent: linear-gradient(90deg, ${p.accentFrom}, ${p.accentTo});" ${isComingSoon ? '' : 'target="_blank" rel="noopener"'}>
+        <a target="_blank" href="${href}" class="${cardClass}" style="animation-delay: ${i * 0.08}s; --card-accent: linear-gradient(90deg, ${p.accentFrom}, ${p.accentTo});" ${isComingSoon ? '' : 'target="_blank" rel="noopener"'}>
             <div class="${statusBadgeClass}">${statusLabel}</div>
             <div class="card-icon" style="--icon-bg: ${p.accentFrom}18; --icon-color: ${p.accentFrom};">
                 ${p.icon}
