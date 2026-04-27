@@ -1,0 +1,247 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --bg-primary: #0a0a0f;
+    --accent-blue: #4f8cff;
+    --accent-purple: #a855f7;
+    --accent-teal: #2dd4bf;
+    --accent-amber: #fbbf24;
+    --text-primary: #f0f0f5;
+    --text-secondary: #8a8a9a;
+    --text-muted: #55556a;
+    --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Background Orbs ===== */
+.bg-orbs {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.bg-orbs .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    animation: orbFloat 20s ease-in-out infinite alternate;
+}
+
+.bg-orbs .orb:nth-child(1) {
+    width: 500px; height: 500px;
+    background: var(--accent-blue);
+    top: -15%; left: -10%;
+    animation-duration: 22s;
+}
+.bg-orbs .orb:nth-child(2) {
+    width: 400px; height: 400px;
+    background: var(--accent-purple);
+    bottom: -10%; right: -10%;
+    animation-duration: 18s;
+    animation-delay: -5s;
+}
+.bg-orbs .orb:nth-child(3) {
+    width: 350px; height: 350px;
+    background: var(--accent-amber);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 25s;
+    animation-delay: -10s;
+}
+
+@keyframes orbFloat {
+    0%   { transform: translate(0, 0) scale(1); }
+    33%  { transform: translate(40px, -30px) scale(1.05); }
+    66%  { transform: translate(-20px, 20px) scale(0.95); }
+    100% { transform: translate(30px, -10px) scale(1.02); }
+}
+
+/* ===== Wrapper ===== */
+.cs-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 24px;
+}
+
+/* ===== Animated Rings ===== */
+.cs-rings {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    pointer-events: none;
+}
+
+.cs-ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.cs-ring--1 {
+    animation: ringRotate 20s linear infinite;
+    border-color: rgba(79, 140, 255, 0.12);
+    border-top-color: rgba(79, 140, 255, 0.4);
+}
+
+.cs-ring--2 {
+    inset: 40px;
+    animation: ringRotate 15s linear infinite reverse;
+    border-color: rgba(168, 85, 247, 0.1);
+    border-bottom-color: rgba(168, 85, 247, 0.35);
+}
+
+.cs-ring--3 {
+    inset: 80px;
+    animation: ringRotate 25s linear infinite;
+    border-color: rgba(251, 191, 36, 0.08);
+    border-left-color: rgba(251, 191, 36, 0.3);
+}
+
+@keyframes ringRotate {
+    to { transform: rotate(360deg); }
+}
+
+/* ===== Content ===== */
+.cs-content {
+    position: relative;
+    text-align: center;
+    max-width: 480px;
+    animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.cs-icon {
+    font-size: 64px;
+    margin-bottom: 24px;
+    animation: iconBounce 3s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-12px); }
+}
+
+.cs-title {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #fff 0%, var(--accent-amber) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cs-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.cs-desc {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* ===== Progress Bar ===== */
+.cs-progress {
+    margin-bottom: 40px;
+}
+
+.cs-progress-bar {
+    width: 100%;
+    max-width: 320px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+}
+
+.cs-progress-fill {
+    width: 40%;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-amber));
+    animation: progressPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes progressPulse {
+    0%, 100% { opacity: 0.7; width: 35%; }
+    50%      { opacity: 1;   width: 50%; }
+}
+
+.cs-progress-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-amber);
+}
+
+/* ===== Back Button ===== */
+.cs-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: inherit;
+    transition: all var(--transition);
+    backdrop-filter: blur(12px);
+}
+
+.cs-back-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(-4px);
+}
+
+.cs-back-arrow {
+    font-size: 1.1rem;
+    transition: transform var(--transition);
+}
+
+.cs-back-btn:hover .cs-back-arrow {
+    transform: translateX(-4px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 520px) {
+    .cs-rings { width: 320px; height: 320px; }
+    .cs-icon { font-size: 48px; }
+    .cs-back-btn { padding: 12px 24px; font-size: 0.85rem; }
+}
