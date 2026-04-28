@@ -1,53 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TechLab Software Solutions — A curated portfolio of modern web applications and systems developed by Dushan.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TechLab Software Solutions — A curated portfolio of modern web applications and systems developed by Dushan."
+    />
     <title>My Projects</title>
-    <link rel="icon" type="image/svg+xml" href="logo without bg.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="icon" type="image/svg+xml" href="logo without bg.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Animated Background Orbs -->
     <div class="bg-orbs">
-        <div class="orb"></div>
-        <div class="orb"></div>
-        <div class="orb"></div>
+      <div class="orb"></div>
+      <div class="orb"></div>
+      <div class="orb"></div>
     </div>
 
     <!-- Toolbar -->
     <div class="toolbar">
-        <div class="search-box">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="searchInput" placeholder="Search systems…" autocomplete="off">
-        </div>
-        <div class="filter-pills" id="filterPills">
-            <button class="filter-pill active" data-filter="all">All</button>
-            <button class="filter-pill" data-filter="web">Web App</button>
-            <button class="filter-pill" data-filter="fullstack">Full-Stack</button>
-            <button class="filter-pill" data-filter="automation">Automation</button>
-            <button class="filter-pill" data-filter="mobile">Mobile</button>
-        </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search systems…"
+          autocomplete="off"
+        />
+      </div>
+      <div class="filter-pills" id="filterPills">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="web">Web App</button>
+        <button class="filter-pill" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-pill" data-filter="automation">Automation</button>
+        <button class="filter-pill" data-filter="mobile">Mobile</button>
+      </div>
     </div>
     <div class="container">
-
-
-        <!-- Cards Grid -->
-        <div class="cards-grid" id="cardsGrid"></div>
+      <!-- Cards Grid -->
+      <div class="cards-grid" id="cardsGrid"></div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            © 2026 <a href="#">TechLab Software Solutions</a> — Developed by Dushan
-        </div>
+      <div class="container">
+        © 2026
+        <a href="https://pgim.cmb.ac.lk/" target="_blank" rel="noopener"
+          >Postgraduate Institute of Medicine, Colombo</a
+        >
+        — Developed by Dushan
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
