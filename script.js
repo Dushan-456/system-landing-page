@@ -45,6 +45,16 @@ const projects = [
     accentTo: "#0284c7",
   },
   {
+    title: "PGIM ID Card Generator",
+    desc: "A web application for generating ID cards for staff and students of PGIM - University of Colombo with automation of Google Drive and Google Sheets.",
+    icon: "💳",
+    tags: ["web"],
+    link: "#",
+    status: "Coming Soon",
+    accentFrom: "#0ea5e9",
+    accentTo: "#0284c7",
+  },
+  {
     title: "OT Calculator",
     desc: "Overtime calculation tool for accurately computing work hours, overtime rates, and generating payroll-ready summaries.",
     icon: "🧮",
