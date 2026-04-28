@@ -35,6 +35,16 @@ const projects = [
     accentTo: "#22d3ee",
   },
   {
+    title: "Library E-Repository",
+    desc: "Digital document repository for libraries to manage, search, and distribute electronic resources and publications.",
+    icon: "📂",
+    tags: ["web"],
+    link: "http://192.168.112.199/library-e-repository/",
+    status: "Developed",
+    accentFrom: "#0ea5e9",
+    accentTo: "#0284c7",
+  },
+  {
     title: "OT Calculator",
     desc: "Overtime calculation tool for accurately computing work hours, overtime rates, and generating payroll-ready summaries.",
     icon: "🧮",
@@ -55,16 +65,6 @@ const projects = [
     accentTo: "#fb7185",
   },
 
-  {
-    title: "Library E-Repository",
-    desc: "Digital document repository for libraries to manage, search, and distribute electronic resources and publications.",
-    icon: "📂",
-    tags: ["web"],
-    link: "#",
-    status: "Coming Soon",
-    accentFrom: "#0ea5e9",
-    accentTo: "#0284c7",
-  },
   {
     title: "Office Internal Management System",
     desc: "All-in-one internal management suite for handling office operations, user management, analytics dashboards, and administrative workflows.",
