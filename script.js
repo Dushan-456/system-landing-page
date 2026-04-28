@@ -4,7 +4,7 @@
 // ====================================================
 const projects = [
   {
-    title: "Meeting Room Booking System",
+    title: "New Meeting Room Booking System",
     desc: "A comprehensive room reservation platform for managing conference rooms, time slots, and bookings with an intuitive calendar view.",
     icon: "📅",
     tags: ["web", "fullstack"],
