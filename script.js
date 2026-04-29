@@ -84,6 +84,17 @@ const projects = [
     accentFrom: "#f472b6",
     accentTo: "#fb7185",
   },
+  {
+    title: "Examiner Management Portal",
+    desc: "Centralized system for managing clinical examiners, rotation schedules, and automated honorarium tracking for medical exams.",
+    icon: "👨‍⚕️",
+    tags: ["web", "fullstack"],
+    link: "#",
+    status: "Coming Soon",
+    accentFrom: "#8b5cf6",
+    accentTo: "#d946ef",
+  },
+
 ];
 
 // ====================================================
