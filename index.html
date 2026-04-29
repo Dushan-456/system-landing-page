@@ -15,8 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Prevent Caching during development -->
+    <!-- Dynamic Cache Buster for CSS -->
+    <script>
+      (function() {
+        const t = Date.now();
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'styles.css?v=' + t;
+        document.head.appendChild(link);
+      })();
+    </script>
+    <!-- Prevent HTML caching -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -64,6 +73,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      document.write('<script src="script.js?v=' + Date.now() + '"><\/script>');
+    </script>
   </body>
 </html>
