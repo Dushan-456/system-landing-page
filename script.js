@@ -59,8 +59,9 @@ const projects = [
     desc: "Overtime calculation tool for accurately computing work hours, overtime rates, and generating payroll-ready summaries.",
     icon: "🧮",
     tags: ["web"],
-    link: "http://192.168.112.199:3003",
-    status: "Developed",
+    //link: "http://192.168.112.199:3003",
+    link: "#",
+    status: "Coming Soon",
     accentFrom: "#34d399",
     accentTo: "#10b981",
   },
@@ -94,7 +95,6 @@ const projects = [
     accentFrom: "#8b5cf6",
     accentTo: "#d946ef",
   },
-
 ];
 
 // ====================================================
