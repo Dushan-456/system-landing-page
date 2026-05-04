@@ -55,6 +55,16 @@ const projects = [
     accentTo: "#10b981",
   },
   {
+    title: "Office Internal Management System",
+    desc: "All-in-one internal management suite for handling office operations, user management, analytics dashboards, and administrative workflows.",
+    icon: "🏢",
+    tags: ["web", "fullstack"],
+    link: "http://192.168.112.199:3001",
+    status: "Developed",
+    accentFrom: "#a855f7",
+    accentTo: "#ec4899",
+  },
+  {
     title: "PGIM ID Card Generator",
     desc: "A web application for generating ID cards for staff and students of PGIM - University of Colombo with automation of Google Drive and Google Sheets.",
     icon: "💳",
@@ -66,16 +76,6 @@ const projects = [
     accentTo: "#0284c7",
   },
 
-  {
-    title: "Office Internal Management System",
-    desc: "All-in-one internal management suite for handling office operations, user management, analytics dashboards, and administrative workflows.",
-    icon: "🏢",
-    tags: ["web", "fullstack"],
-    link: "http://192.168.112.199:3001",
-    status: "Developed",
-    accentFrom: "#a855f7",
-    accentTo: "#ec4899",
-  },
   {
     title: "Vehicle Parking Management System",
     desc: "Smart parking management solution for tracking vehicles, managing parking slots, generating reports, and streamlining operations.",
