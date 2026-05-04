@@ -35,7 +35,7 @@ const projects = [
     accentTo: "#22d3ee",
   },
   {
-    title: "PGIM Library E-Repository",
+    title: "PGIM Digital Library ",
     desc: "Digital document repository for libraries to manage, search, and distribute electronic resources and publications.",
     icon: "📂",
     tags: ["web"],
