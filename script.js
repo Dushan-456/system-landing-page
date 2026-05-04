@@ -45,6 +45,16 @@ const projects = [
     accentTo: "#0284c7",
   },
   {
+    title: "OT Calculator",
+    desc: "Overtime calculation tool for accurately computing work hours, overtime rates, and generating payroll-ready summaries.",
+    icon: "🧮",
+    tags: ["web"],
+    link: "http://192.168.112.199:3003",
+    status: "Developed",
+    accentFrom: "#34d399",
+    accentTo: "#10b981",
+  },
+  {
     title: "PGIM ID Card Generator",
     desc: "A web application for generating ID cards for staff and students of PGIM - University of Colombo with automation of Google Drive and Google Sheets.",
     icon: "💳",
@@ -55,16 +65,7 @@ const projects = [
     accentFrom: "#0ea5e9",
     accentTo: "#0284c7",
   },
-  {
-    title: "OT Calculator",
-    desc: "Overtime calculation tool for accurately computing work hours, overtime rates, and generating payroll-ready summaries.",
-    icon: "🧮",
-    tags: ["web"],
-    link: "http://192.168.112.199:3003",
-    status: "Developed",
-    accentFrom: "#34d399",
-    accentTo: "#10b981",
-  },
+
   {
     title: "Office Internal Management System",
     desc: "All-in-one internal management suite for handling office operations, user management, analytics dashboards, and administrative workflows.",
@@ -95,7 +96,6 @@ const projects = [
     accentFrom: "#8b5cf6",
     accentTo: "#d946ef",
   },
-
 ];
 
 // ====================================================
